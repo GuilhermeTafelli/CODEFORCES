@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+vector <int> v;
+
+int primo(int a){
+    for(int i = 1;i<=sqrt(a);i++){
+        if(a%i == 0)return true;
+    }
+    reuturn false;
+
+}
+
+
+int main(){
+    int a;
+    cin  >> a;
+    for(int i = 1;i<=a;i++){
+        if(primo(i))v.push_back(i);
+    }
+    for(int i = 0;i<v.size();i++)cout << v[i] << endl;
+
+
+}
